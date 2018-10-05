@@ -17,6 +17,8 @@
 		8068552A21680961009DEEA4 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552921680961009DEEA4 /* Constantes.swift */; };
 		8068552C21680C47009DEEA4 /* MonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552B21680C47009DEEA4 /* MonNavController.swift */; };
 		8068552E216811DD009DEEA4 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552D216811DD009DEEA4 /* MenuCell.swift */; };
+		806855302168191F009DEEA4 /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552F2168191F009DEEA4 /* Plat.swift */; };
+		8068553221681AAD009DEEA4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068553121681AAD009DEEA4 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8068552921680961009DEEA4 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		8068552B21680C47009DEEA4 /* MonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonNavController.swift; sourceTree = "<group>"; };
 		8068552D216811DD009DEEA4 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		8068552F2168191F009DEEA4 /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
+		8068553121681AAD009DEEA4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		8068551F21680648009DEEA4 /* Modele */ = {
 			isa = PBXGroup;
 			children = (
+				8068552F2168191F009DEEA4 /* Plat.swift */,
+				8068553121681AAD009DEEA4 /* Enums.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				8068552C21680C47009DEEA4 /* MonNavController.swift in Sources */,
 				8068550E21680292009DEEA4 /* AppDelegate.swift in Sources */,
 				8068552721680924009DEEA4 /* MonTabBarController.swift in Sources */,
+				806855302168191F009DEEA4 /* Plat.swift in Sources */,
+				8068553221681AAD009DEEA4 /* Enums.swift in Sources */,
 				806855252168072F009DEEA4 /* ALaCarteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
