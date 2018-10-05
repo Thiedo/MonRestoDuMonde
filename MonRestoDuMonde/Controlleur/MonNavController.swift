@@ -18,5 +18,4 @@ class MonNavController: UINavigationController {
         navigationBar.titleTextAttributes = [.font: FONT_DE_BASE as Any, .foregroundColor: GRIS_TRES_CLAIRE]
     }
 
-  
 }
