@@ -15,6 +15,7 @@
 		806855252168072F009DEEA4 /* ALaCarteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806855242168072F009DEEA4 /* ALaCarteTableViewController.swift */; };
 		8068552721680924009DEEA4 /* MonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552621680924009DEEA4 /* MonTabBarController.swift */; };
 		8068552A21680961009DEEA4 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552921680961009DEEA4 /* Constantes.swift */; };
+		8068552C21680C47009DEEA4 /* MonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068552B21680C47009DEEA4 /* MonNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		806855242168072F009DEEA4 /* ALaCarteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarteTableViewController.swift; sourceTree = "<group>"; };
 		8068552621680924009DEEA4 /* MonTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonTabBarController.swift; sourceTree = "<group>"; };
 		8068552921680961009DEEA4 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		8068552B21680C47009DEEA4 /* MonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				80685522216806D9009DEEA4 /* MenuController.swift */,
 				806855242168072F009DEEA4 /* ALaCarteTableViewController.swift */,
 				8068552621680924009DEEA4 /* MonTabBarController.swift */,
+				8068552B21680C47009DEEA4 /* MonNavController.swift */,
 			);
 			path = Controlleur;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				8068552A21680961009DEEA4 /* Constantes.swift in Sources */,
 				80685523216806D9009DEEA4 /* MenuController.swift in Sources */,
+				8068552C21680C47009DEEA4 /* MonNavController.swift in Sources */,
 				8068550E21680292009DEEA4 /* AppDelegate.swift in Sources */,
 				8068552721680924009DEEA4 /* MonTabBarController.swift in Sources */,
 				806855252168072F009DEEA4 /* ALaCarteTableViewController.swift in Sources */,
