@@ -10,7 +10,7 @@ import Foundation
 
 enum Type {
     
-    case entre
+    case entree
     case platPrincipal
-    case desert
+    case dessert
 }

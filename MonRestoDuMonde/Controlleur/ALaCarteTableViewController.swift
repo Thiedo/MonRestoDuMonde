@@ -10,43 +10,56 @@ import UIKit
 
 class ALaCarteTableViewController: UITableViewController {
 
+    let cellID = "PlatCell"
+    var tousLesPlats = [ALaCarte]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let vue = UIView(frame: tableView.bounds)
+        vue.layer.addSublayer(Degrade())
+        tableView.backgroundView = vue
+        
+        tousLesPlats = LesPlats.obtenir.carteCompete()
+       
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return tousLesPlats.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return tousLesPlats[section].plats.count
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let plat = tousLesPlats[indexPath.section].plats[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? PlatCell {
+            cell.miseEnplace(plat: plat)
+            return cell
+        }
+        return UITableViewCell()
     }
-    */
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+       let typeDePlat = tousLesPlats[section].type
+       
+        switch typeDePlat {
+        case .entree: return "Nos entrées"
+        case .platPrincipal: return "Nos plats principaux"
+        case .dessert: return "Le coin des gourmants"
+            
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
